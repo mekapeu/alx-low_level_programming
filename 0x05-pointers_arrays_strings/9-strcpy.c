@@ -1,21 +1,23 @@
 #include "main.h"
 
 /**
- * puts_half - prints the second half of a string.
- *@str: string to use.
+ * *_strcpy - copies the string pointed to by src, including \0.
+ *@src: pointer.
+ *@dest: pointer.
+ *Return: the pointer to dest.
  */
 
-void puts_half(char *str)
+char *_strcpy(char *dest, char *src)
 {
-	int length, n, i;
+	int i, length;
 
-	for (length = 0; str[length] != '\0'; length++)
+	for (length = 0; src[length] != '\0'; length++)
 	{
 	}
-	n = (length - 1) / 2;
-	for (i = n + 1; str[i] != '\0'; i++)
+
+	for (i = 0; i <= length ; i++)
 	{
-		_putchar(str[i]);
+		dest[i] = src[i];
 	}
-	_putchar('\n');
+	return (dest);
 }
