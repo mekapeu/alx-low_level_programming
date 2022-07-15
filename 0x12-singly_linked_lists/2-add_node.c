@@ -28,7 +28,7 @@ list_t *add_node(list_t **head, const char *str)
 
 	temp = malloc(sizeof(list_t));
 	if (temp == NULL)
-		return (NULL);
+	  return (NULL);
 	/* temp now points to first element*/
 	temp->next = *head;
 	temp->str = strdup(str);
